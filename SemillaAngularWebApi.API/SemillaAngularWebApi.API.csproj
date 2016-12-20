@@ -134,6 +134,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sql\dbtest.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
