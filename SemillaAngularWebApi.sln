@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.API", "AngularJSAuthentication.API\SemillaAngularWebApi.API.csproj", "{23DFCFD5-B158-4C0D-9C31-5E9CB64C64CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.API", "SemillaAngularWebApi.API\SemillaAngularWebApi.API.csproj", "{23DFCFD5-B158-4C0D-9C31-5E9CB64C64CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.Web", "AngularJSAuthentication.Web\SemillaAngularWebApi.Web.csproj", "{E4156422-2684-4222-95C2-4B9AE4CBA7E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.Web", "SemillaAngularWebApi.Web\SemillaAngularWebApi.Web.csproj", "{E4156422-2684-4222-95C2-4B9AE4CBA7E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.ResourceServer", "AngularJSAuthentication.ResourceServer\SemillaAngularWebApi.ResourceServer.csproj", "{69BC6280-CF91-409C-81BF-28B95417ACBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemillaAngularWebApi.ResourceServer", "SemillaAngularWebApi.ResourceServer\SemillaAngularWebApi.ResourceServer.csproj", "{69BC6280-CF91-409C-81BF-28B95417ACBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
