@@ -10,6 +10,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using SemillaAngularWebApi.API.DB;
 
 [assembly: OwinStartup(typeof(SemillaAngularWebApi.API.Startup))]
 
@@ -23,6 +24,7 @@ namespace SemillaAngularWebApi.API
 
         public void Configuration(IAppBuilder app)
         {
+                     
             HttpConfiguration config = new HttpConfiguration();
 
             ConfigureOAuth(app);

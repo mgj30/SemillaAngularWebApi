@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SemillaAngularWebApi.API.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -21,8 +22,10 @@ namespace SemillaAngularWebApi.API.Controllers
             //var Name1 = User.Identity.Name;
 
             //var userName = principal.Claims.Where(c => c.Type == "sub").Single().Value;
-
-            return Ok(Order.CreateOrders());
+            DataBaseContext db = new DataBaseContext();
+            var usuarios = db.select("aspnetusers", null);
+            return Ok(usuarios);
+            //return Ok(Order.CreateOrders());
         }
 
     }

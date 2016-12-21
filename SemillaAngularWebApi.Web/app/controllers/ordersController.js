@@ -5,7 +5,7 @@ app.controller('ordersController', ['$scope', 'ordersService', function ($scope,
 
     ordersService.getOrders().then(function (results) {
 
-        $scope.orders = results.data;
+        $scope.orders = results;
 
     }, function (error) {
         //alert(error.data.message);
