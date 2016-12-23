@@ -22,10 +22,8 @@ namespace SemillaAngularWebApi.API.Controllers
             //var Name1 = User.Identity.Name;
 
             //var userName = principal.Claims.Where(c => c.Type == "sub").Single().Value;
-            DataBaseContext db = new DataBaseContext();
-            var usuarios = db.select("aspnetusers", null);
-            return Ok(usuarios);
-            //return Ok(Order.CreateOrders());
+           
+            return Ok(Order.CreateOrders());
         }
 
     }

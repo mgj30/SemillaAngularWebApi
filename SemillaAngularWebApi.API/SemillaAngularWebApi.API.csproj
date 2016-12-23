@@ -57,6 +57,14 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Owin">
       <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
@@ -90,18 +98,24 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Cors">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.0.0\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -114,16 +128,21 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Http.Owin">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.1.2\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    <Reference Include="System.Web.Http.OData, Version=5.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.3.1\lib\net45\System.Web.Http.OData.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.0\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -134,6 +153,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB\db.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DB\db.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.cs</LastGenOutput>
+    </Content>
+    <Content Include="Global.asax" />
     <Content Include="Sql\dbtest.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -142,12 +172,207 @@
     <Compile Include="AuthContext.cs" />
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\alumnoController.cs" />
+    <Compile Include="Controllers\Api\alumno_en_grupoController.cs" />
+    <Compile Include="Controllers\Api\auditController.cs" />
+    <Compile Include="Controllers\Api\aulasController.cs" />
+    <Compile Include="Controllers\Api\boletinesController.cs" />
+    <Compile Include="Controllers\Api\boletines_infoController.cs" />
+    <Compile Include="Controllers\Api\centrosController.cs" />
+    <Compile Include="Controllers\Api\clase_expressController.cs" />
+    <Compile Include="Controllers\Api\clase_grupoController.cs" />
+    <Compile Include="Controllers\Api\clase_impartidaController.cs" />
+    <Compile Include="Controllers\Api\clienteController.cs" />
+    <Compile Include="Controllers\Api\comentario_alumnoController.cs" />
+    <Compile Include="Controllers\Api\comentario_grupoController.cs" />
+    <Compile Include="Controllers\Api\curso_lectivoController.cs" />
+    <Compile Include="Controllers\Api\descuento_clienteController.cs" />
+    <Compile Include="Controllers\Api\evento_grupoController.cs" />
+    <Compile Include="Controllers\Api\generacion_recibosController.cs" />
+    <Compile Include="Controllers\Api\gruposController.cs" />
+    <Compile Include="Controllers\Api\librosController.cs" />
+    <Compile Include="Controllers\Api\libross_digitalesController.cs" />
+    <Compile Include="Controllers\Api\mail_adjunto_en_messageController.cs" />
+    <Compile Include="Controllers\Api\mail_messageController.cs" />
+    <Compile Include="Controllers\Api\mail_message_adjuntosController.cs" />
+    <Compile Include="Controllers\Api\mail_message_folderController.cs" />
+    <Compile Include="Controllers\Api\mail_message_usersController.cs" />
+    <Compile Include="Controllers\Api\nivel_cursoController.cs" />
+    <Compile Include="Controllers\Api\nomina_headController.cs" />
+    <Compile Include="Controllers\Api\nomina_lineController.cs" />
+    <Compile Include="Controllers\Api\notasController.cs" />
+    <Compile Include="Controllers\Api\pasar_listaController.cs" />
+    <Compile Include="Controllers\Api\profesoresController.cs" />
+    <Compile Include="Controllers\Api\profesor_en_grupoController.cs" />
+    <Compile Include="Controllers\Api\recibosController.cs" />
+    <Compile Include="Controllers\Api\recibo_headController.cs" />
+    <Compile Include="Controllers\Api\recibo_lineController.cs" />
+    <Compile Include="Controllers\Api\serie_reciboController.cs" />
+    <Compile Include="Controllers\Api\skillsController.cs" />
+    <Compile Include="Controllers\Api\tabla_gastosController.cs" />
+    <Compile Include="Controllers\Api\tipo_productoController.cs" />
+    <Compile Include="Controllers\Api\usuariosController.cs" />
+    <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\RefreshTokensController.cs" />
-    <Compile Include="DB\DataBaseContext.cs" />
+    <Compile Include="DB\alumno.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\alumno_en_grupo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\audit.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\aulas.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\boletines.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\boletines_info.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\centros.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\clase_express.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\clase_grupo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\clase_impartida.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\cliente.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\comentario_alumno.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\comentario_grupo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\curso_lectivo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\DataSets.cs" />
+    <Compile Include="DB\db.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\db.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DB\descuento_cliente.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\evento_grupo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\generacion_recibos.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\grupos.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\libros.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\libross_digitales.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\mail_adjunto_en_message.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\mail_message.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\mail_message_adjuntos.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\mail_message_folder.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\mail_message_users.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\nivel_curso.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\nomina_head.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\nomina_line.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\notas.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\pasar_lista.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\profesores.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\profesor_en_grupo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\PropertyCopy.cs" />
+    <Compile Include="DB\recibos.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\recibo_head.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\recibo_line.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\refreshtoken.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\roles.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\serie_recibo.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\skills.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\tabla_gastos.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\tipo_producto.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\userclaims.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\userlogins.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\users.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\usuarios.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\ConditionsSelect.cs" />
     <Compile Include="Entities\RefreshToken.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Migrations\201407121205456_AddClientsAndRefreshTokenTables.cs" />
     <Compile Include="Migrations\201407121205456_AddClientsAndRefreshTokenTables.Designer.cs">
@@ -167,6 +392,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <EntityDeploy Include="DB\db.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DB\db.edmx.diagram">
+      <DependentUpon>db.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\ngAuthenticationAPI.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -182,6 +414,9 @@
     <EmbeddedResource Include="Migrations\201407121205456_AddClientsAndRefreshTokenTables.resx">
       <DependentUpon>201407121205456_AddClientsAndRefreshTokenTables.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

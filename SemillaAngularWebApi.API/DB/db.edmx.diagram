@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d392ad5f0c941548cd5781f65a9190b" Name="Diagram1">
+        <EntityTypeShape EntityType="gestion_horariosModel.alumno" Width="1.5" PointX="6" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.alumno_en_grupo" Width="1.5" PointX="8.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.audit" Width="1.5" PointX="16.5" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.aulas" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.boletines" Width="1.5" PointX="11.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.boletines_info" Width="1.5" PointX="13.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.centros" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.clase_express" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.clase_grupo" Width="1.5" PointX="8.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.clase_impartida" Width="1.5" PointX="8.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.cliente" Width="1.5" PointX="3.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.comentario_alumno" Width="1.5" PointX="8.25" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.comentario_grupo" Width="1.5" PointX="11.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.curso_lectivo" Width="1.5" PointX="8.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.descuento_cliente" Width="1.5" PointX="6" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.evento_grupo" Width="1.5" PointX="8.25" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.generacion_recibos" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.grupos" Width="1.5" PointX="6" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.libros" Width="1.5" PointX="3.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.libross_digitales" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.mail_adjunto_en_message" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.mail_message" Width="1.5" PointX="19.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.mail_message_adjuntos" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.mail_message_folder" Width="1.5" PointX="17.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.mail_message_users" Width="1.5" PointX="21.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.nivel_curso" Width="1.5" PointX="3.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.nomina_head" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.nomina_line" Width="1.5" PointX="10.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.notas" Width="1.5" PointX="11.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.pasar_lista" Width="1.5" PointX="11.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.profesor_en_grupo" Width="1.5" PointX="8.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.profesores" Width="1.5" PointX="6" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.recibo_head" Width="1.5" PointX="11" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.recibo_line" Width="1.5" PointX="13.25" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.refreshtoken" Width="1.5" PointX="16.5" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.roles" Width="1.5" PointX="16" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.serie_recibo" Width="1.5" PointX="8.75" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.skills" Width="1.5" PointX="11.25" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.tabla_gastos" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.tipo_producto" Width="1.5" PointX="3.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.userclaims" Width="1.5" PointX="16" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.userlogins" Width="1.5" PointX="16" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.users" Width="1.5" PointX="13.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.usuarios" Width="1.5" PointX="14.25" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="gestion_horariosModel.recibos" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="gestion_horariosModel.fk_alumno_grupo_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_boletin_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_comentario_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_express_alumn" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_lista_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_usuario_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_alumno_grupo_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_auditoria_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_aula_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_clase_grupo_aula" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_express_aula" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_boletin_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_boletin_info_boletin" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_boletin_info_nota" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_boletin_info_skill" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_express_nivel" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_express_producto" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_express_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_clase_grupo_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_clase_grupo_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_impar_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_impar_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_descuento_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_recibo_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_comentario_grupo_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_comentario_grupo_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_recibo_curso" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_evento_grupo_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_grupo_libro" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_lista_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_nivel_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_prof_grupo_grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_tipo_producto" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_libro_libro_digital" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_int_adj_message" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_int_message_adj" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_message_message_folder" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_message_user_emisor" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_mmu_mm" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_mmu_users" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_nom_head_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_nom_nom_header" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_lista_profesor" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_prof_grupo_prof" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_usuario_profesor" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_head_recibo" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_recibo_herad_serie" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_tp_recibo_line" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.fk_token_cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.ApplicationUser_Claims" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.ApplicationUser_Logins" ManuallyRouted="false" />
+        <AssociationConnector Association="gestion_horariosModel.userroles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
