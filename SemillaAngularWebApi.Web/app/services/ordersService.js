@@ -5,7 +5,14 @@ app.factory('ordersService', ['$http', 'ngAuthSettings', function ($http, ngAuth
 
     var ordersServiceFactory = {};
 
-    var _getOrders = function () {
+    var _getClientes = function () {
+
+        return $http.get(serviceBase + 'api/orders').then(function (results) {
+            return results;
+        });
+    };
+
+    var _setCliente = function () {
 
         return $http.get(serviceBase + 'api/orders').then(function (results) {
             return results;
