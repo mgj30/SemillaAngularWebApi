@@ -217,6 +217,7 @@
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\RefreshTokensController.cs" />
+    <Compile Include="Controllers\SchemaController.cs" />
     <Compile Include="DB\alumno.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
@@ -345,6 +346,8 @@
     <Compile Include="DB\roles.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
+    <Compile Include="DB\Schema_info\Column_info.cs" />
+    <Compile Include="DB\Schema_info\Table_info.cs" />
     <Compile Include="DB\serie_recibo.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
